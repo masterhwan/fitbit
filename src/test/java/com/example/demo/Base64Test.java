@@ -10,7 +10,7 @@ public class Base64Test {
 
 	private static final Logger log = LoggerFactory.getLogger(Base64Test.class);
 
-	String originalInput = "22CZW9:819d1ca081783073d0fd64d725b02380";
+	String originalInput = "clientid:client_secret";
 	String encodedString = Base64.getEncoder().encodeToString(originalInput.getBytes());
 	byte[] decoded = Base64.getDecoder().decode(encodedString);
 	String decodedString = new String(decoded);
